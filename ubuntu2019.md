@@ -22,7 +22,7 @@
 ### Swapfile
 Need ~4GB extra especially for Windows KVM
 ```bash
-sudo fallocate -l 1G /swapfile
+sudo fallocate -l 4G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
