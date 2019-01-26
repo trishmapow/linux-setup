@@ -8,7 +8,7 @@
 
 ## Improving boot/shutdown performance
 View last boot time with `systemd-analyze time`.
-- Edit /etc/default/grub, remove timeout, force ACPI to fix shutdown hang problem
+- Edit /etc/default/grub, remove timeout, force ACPI to fix shutdown hang problem. Remove `quiet splash` for easier diagnostics, and it looks better too :)
 ```bash
 GRUB_DEFAULT=0
 GRUB_TIMEOUT_STYLE=hidden
