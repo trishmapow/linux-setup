@@ -6,6 +6,8 @@
 - Don't automatically install Nvidia drivers
 - Still haven't solved Nvidia Optimus/Bumblebee yet, currently using Integrated Graphics only
 - Install tlp for power management, default settings are fine
+
+### Desktop Environment
 - Sticking with GNOME because it's easy to setup and has great extensions
   - Alt-tab switcher popup delay removal
   - Alternate-tab (don't group by application)
@@ -16,6 +18,18 @@
   - Power indicator: show wattage, ~5W idle, ~10W web browsing
   - Removable drive menu (unmount etc)
   - User themes
+  
+### Swapfile
+Need ~4GB extra especially for Windows KVM
+```bash
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+# edit /etc/fstab and add
+/swapfile swap swap defaults 0 0
+```
 
 ### Improving boot/shutdown performance
 View last boot time with `systemd-analyze time`.
@@ -49,4 +63,12 @@ graphical.target reached after 6.556s in userspace
 ## Windows on KVM
 -- to be added --
 
-config for virt-manager
+Download ISO: https://www.microsoft.com/en-au/software-download/windows10ISO
+
+## Miscellaneous Apps
+- Joplin (note-taking), CherryTree (not md compatible)
+- OnlyOffice Desktop Editors
+- Sublime Text
+- IntelliJ Idea
+- Chromium (daily use) - still need to fix DRM playback
+- Firefox (blank profile/when Chromium doesn't work)
