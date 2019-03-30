@@ -77,3 +77,5 @@ Download ISO: https://www.microsoft.com/en-au/software-download/windows10ISO
 Moving from Arch was a little unorganised, just grabbing important folders from the home directory. Found two new apps to help with this:
 1. [Timeshift](https://github.com/teejee2008/timeshift) (automated snapshots, behaves similar to System Backup & Restore on Windows)
 2. [Aptik GTK](https://github.com/teejee2008/aptik-gtk) (more advanced, backs up repos, packages, themes, mounts etc.)
+
+`dconf dump / > dconf-settings.ini`
