@@ -1,4 +1,4 @@
-# Ubuntu 18.04 2019 Setup
+# Ubuntu 19.04 2019 Setup
 
 ## Installation
 - Use full-disk encryption
@@ -29,6 +29,11 @@ sudo swapon /swapfile
 
 # edit /etc/fstab and add
 /swapfile swap swap defaults 0 0
+```
+Reduce swappiness to minimum (zero doesn't work)
+```
+sudoedit /etc/sysctl.conf
+vm.swappiness = 1
 ```
 
 ### Improving boot/shutdown performance
