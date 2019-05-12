@@ -11,12 +11,13 @@
 - Sticking with GNOME because it's easy to setup and has great extensions
   - Alt-tab switcher popup delay removal
   - Alternate-tab (don't group by application)
+  - Arc Menu (Windows style start menu - mainly for aesthetics, not used)
   - Dash to panel (bottom task bar)
-  - Frippery applications menu (don't really use this - just like the Ubuntu 'Start menu' icon)
   - Gsconnect: pair with Android phone, mount FS, read messages etc
   - Panel osd: move notifications to the bottom right
   - Power indicator: show wattage, ~5W idle, ~10W web browsing
   - Removable drive menu (unmount etc)
+  - Top Panel Workspace Scroll (change workspaces by scrolling in empty panel space)
   - User themes
   
 ### Swapfile
