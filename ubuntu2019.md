@@ -61,6 +61,8 @@ trishmapow@tpc:~$ systemd-analyze time
 Startup finished in 2.646s (firmware) + 4.504s (loader) + 8.394s (kernel) + 6.761s (userspace) = 22.306s
 graphical.target reached after 6.556s in userspace
 ```
+### Other optimisations
+Enable all SysRq features (Alt+PrtSc) (REISUB) (F for OOM killer), change `kernel.sysrq = 1` in `/etc/sysctl.d/10-magic-sysrq.conf`.
 
 ### Startup Applications
 - **Albert** (launcher): https://github.com/albertlauncher/albert. Great launcher for apps and searches files very quickly. Has nice extensions to e.g. show IP, calculator. Have it mapped to Alt+Space.
