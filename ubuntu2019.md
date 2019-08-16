@@ -8,6 +8,11 @@
 - Install tlp for power management, default settings are fine
 
 ### Desktop Environment
+- Moved to XFCE (17/8/19) for better resource usage
+  - tint2 panel
+  - pnmixer
+  - xfce4-power-manager-plugins (brightness)
+
 - Sticking with GNOME because it's easy to setup and has great extensions
   - Alt-tab switcher popup delay removal
   - Alternate-tab (don't group by application)
