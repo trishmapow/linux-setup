@@ -9,9 +9,13 @@
 
 ### Desktop Environment
 - Moved to XFCE (17/8/19) for better resource usage
-  - tint2 panel
+  - tint2 panel (disable xfce4-panel and autostart tint2 in session&startup)
+  ![tint2 bar](tint2.png)
   - pnmixer
   - xfce4-power-manager-plugins (brightness)
+  - [psuinfo](https://github.com/nwg-piotr/psuinfo/blob/master/psuinfo-1.0-2) for tint2 executors
+    - `psuinfo -Ik` for network, 3s delay
+    - `cat /sys/class/power_supply/BAT0/power_now | cut -c -2 | awk '{print $1"W"}'` for power usage
 
 - Sticking with GNOME because it's easy to setup and has great extensions
   - Alt-tab switcher popup delay removal
