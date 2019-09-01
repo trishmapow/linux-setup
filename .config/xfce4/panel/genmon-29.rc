@@ -1,0 +1,6 @@
+Command=/home/trishmapow/Desktop/battery.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=2500
+Font=Noto Sans Bold 14
+

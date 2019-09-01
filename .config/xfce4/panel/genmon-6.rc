@@ -1,0 +1,6 @@
+Command=/home/trishmapow/Desktop/network-panel.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=2250
+Font=Terminus Bold 14
+
