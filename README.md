@@ -1,6 +1,9 @@
 # linux-setup
 Files/notes on my current/past Linux setups
 
+![xfce_setup](xfce_setup.png)
+*xfce4-panel + gnome-terminal + Nemo + Albert launcher, themes as shown*
+
 ### Latest setup: [2019 - Ubuntu 19.04](https://github.com/trishmapow/linux-setup/blob/master/ubuntu2019.md)
 
 [Wine - what does(n't) work](https://github.com/trishmapow/linux-setup/blob/master/wine.md)
