@@ -5,6 +5,9 @@
 - full disk enc. as prompted (nice to see)
 - tlp default settings
 
+### DNS over HTTPS
+Install `dnscrypt-proxy`, set DNS to 127.0.2.1.
+
 ## DE
 - GNOME by default
 - Installed xfce4 + goodies, kept GNOME packages
