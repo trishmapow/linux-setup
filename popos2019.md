@@ -16,3 +16,20 @@ Install `dnscrypt-proxy`, set DNS to 127.0.2.1.
   [Seat:*]
   autologin-user=trishmapow
   ```
+
+## Shell
+- fish as default shell
+- [fisher](https://github.com/jorgebucaran/fisher) package manager
+  - `fisher add franciscolourenco/done` notify when command finishes
+- `abbr --add copy 'rsync -avh --progress'` etc.
+- fan control via asus-nb-wmi kernel module
+```fish
+function fan
+  if test "$argv[1]" = "on"
+    echo 255 | sudo tee /sys/devices/platform/asus-nb-wmi/hwmon/hwmon2/pwm1
+  else if test "$argv[1]" = "off"
+    echo 2 | sudo tee /sys/devices/platform/asus-nb-wmi/hwmon/hwmon2/pwm1_enable
+  else
+    echo "Usage: fan [on|off]"
+  end
+end
