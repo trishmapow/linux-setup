@@ -4,7 +4,7 @@ Files/notes on my current/past Linux setups
 ![xfce_setup](xfce_setup.png)
 *xfce4-panel + gnome-terminal + Nemo + Albert launcher, themes as shown*
 
-### Latest setup: [2019 - Ubuntu 19.04](ubuntu2019.md) -> [2019Q4 - Pop\! OS](popos2019.md)
+### Latest setup: [2019 - Ubuntu 19.04](ubuntu2019.md) → [2019Q4 - Pop\! OS](popos2019.md)
 
 [Wine - what does(n't) work](wine.md)
 
