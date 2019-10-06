@@ -26,9 +26,9 @@ Install `dnscrypt-proxy`, set DNS to 127.0.2.1.
 ```fish
 function fan
   if test "$argv[1]" = "on"
-    echo 255 | sudo tee /sys/devices/platform/asus-nb-wmi/hwmon/hwmon2/pwm1
+    echo 255 | sudo tee /sys/devices/platform/asus-nb-wmi/hwmon/hwmon2/pwm1 >/dev/null
   else if test "$argv[1]" = "off"
-    echo 2 | sudo tee /sys/devices/platform/asus-nb-wmi/hwmon/hwmon2/pwm1_enable
+    echo 2 | sudo tee /sys/devices/platform/asus-nb-wmi/hwmon/hwmon2/pwm1_enable >/dev/null
   else
     echo "Usage: fan [on|off]"
   end
