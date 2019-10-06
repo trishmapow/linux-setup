@@ -1,4 +1,4 @@
-# set element fgcolor,bgcolor
+#set element fgcolor,bgcolor
 set titlecolor brightwhite,blue
 set statuscolor brightwhite,red
 #set errorcolor brightwhite,red
@@ -12,3 +12,6 @@ set mouse
 set smooth
 set regexp
 set constantshow
+
+set tabsize 4
+set tabstospaces
