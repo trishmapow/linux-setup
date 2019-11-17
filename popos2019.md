@@ -8,6 +8,15 @@
 ### DNS over HTTPS
 Install `dnscrypt-proxy`, set DNS to 127.0.2.1.
 
+### Scheduler
+Show current: `cat /sys/block/sda/queue/scheduler`.
+
+Change to `bfq`:
+- `echo bfq | sudo tee /etc/modules-load.d/bfq.conf`
+- `ACTION=="add|change", KERNEL=="sd*[!0-9]|sr*", ATTR{queue/scheduler}="bfq"` > `/etc/udev/rules.d/60-scheduler.rules`
+- `sudo udevadm control --reload`
+- `sudo udevadm trigger`
+
 ## DE
 - GNOME by default
 - Installed xfce4 + goodies, kept GNOME packages
